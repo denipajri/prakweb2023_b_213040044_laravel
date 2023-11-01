@@ -2,7 +2,7 @@
 
 @section('container')
 <h1 class="mb-4">
-    Halaman Blog Posts
+    {{ $title }}
 </h1>
 
     @foreach ($posts as $post)
