@@ -1,12 +1,12 @@
 <?php
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
+
 use App\Models\Category;
-use App\Models\User;
-use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 
-use function PHPUnit\Framework\returnSelf;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,8 +26,7 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/about', function () 
-{
+Route::get('/about', function () {
     return view('about', [
         "title" => "About",
         "active" => "about",
@@ -47,3 +46,7 @@ Route::get('/categories', function () {
         'categories' => Category::all()
     ]);
 });
+
+
+Route::get('/login', [LoginController::class, 'index']);
+Route::get('/register', [RegisterController::class, 'index']);
