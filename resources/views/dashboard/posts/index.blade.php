@@ -5,7 +5,8 @@
     <h1 class="h2">My Posts</h1>
 </div>
 
-<div class="table-responsive col-lg-8">
+<div class="table-responsive col-lg-9">
+    <a href="/dashboard/posts/create" class="btn btn-primary mb-3">Create New Post</a>
     <table class="table table-striped table-sm">
         <thead>
             <tr>
@@ -25,7 +26,7 @@
                     <a href="/dashboard/posts/{{ $post->slug }}" class="btn btn-info">
                         <i class="bi bi-info-circle"></i>
                     </a>
-                    <a href="" class="btn btn-warning"><i class="bi bi-pencil"></i></a>
+                    <a href="" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
                     <a href="" class="btn btn-danger"><i class="bi bi-trash"></i></a>
                 </td>
             </tr>

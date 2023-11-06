@@ -9,7 +9,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ Request::is('dashboard/posts') ? 'active' : '' }}" aria-current="page"
+                <a class="nav-link {{ Request::is('dashboard/posts*') ? 'active' : '' }}" aria-current="page"
                     href="/dashboard/posts">
                     <i class="bi bi-layout-text-sidebar align-text-bottom"></i>
                     My Posts
